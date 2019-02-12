@@ -1,0 +1,56 @@
+# jdenticon-flutter
+
+Flutter widget wrapper for jdenticons-dart
+
+![](./example_screenshot.png)
+
+## Example
+```dart
+class TestIdenticonPage extends StatefulWidget {
+  @override
+  TestIdenticonPageState createState() => TestIdenticonPageState();
+}
+
+class TestIdenticonPageState extends State<TestIdenticonPage> {
+  String text = "";
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Identicon"),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Container(
+              width: 150,
+              height: 150,
+              child: Identicon(text),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextField(
+                decoration: InputDecoration(border: OutlineInputBorder()),
+                onChanged: (value) {
+                  setState(
+                    () {
+                      text = value;
+                    },
+                  );
+                },
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+```

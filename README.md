@@ -1,6 +1,6 @@
 # jdenticon-flutter
 
-Flutter widget wrapper for jdenticons-dart
+Flutter widget wrapper for [jdenticons-dart](https://github.com/videah/jdenticon-dart)
 
 ![](./example_screenshot.png)
 
@@ -13,11 +13,6 @@ class TestIdenticonPage extends StatefulWidget {
 
 class TestIdenticonPageState extends State<TestIdenticonPage> {
   String text = "";
-
-  @override
-  void initState() {
-    super.initState();
-  }
 
   @override
   Widget build(BuildContext context) {

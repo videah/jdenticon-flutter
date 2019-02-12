@@ -1,4 +1,5 @@
 # jdenticon-flutter
+[![pub package](https://img.shields.io/pub/v/jdenticon_flutter.svg)](https://pub.dartlang.org/packages/jdenticon_flutter)
 
 Flutter widget wrapper for [jdenticons-dart](https://github.com/videah/jdenticon-dart)
 
